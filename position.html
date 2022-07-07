@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Position</title>
     <style>
+        .swim{
+            position: relative;
+        }
         .swim div{
             border: 1px dashed yellowgreen;
             width: 200px;
+        }
+        #boy{
+            position: relative;
+            z-index: 2;
+            top: 87px;
+            /* ^change this boy top: px; for make it Swim */
+        }
+        #ring{
+            position: relative;
+            z-index: 1;
+            /* position: absolute; */
+            /* position: fixed; */
+            /* position: sticky; */
+            /* left: 80px; change to make thr boy in water*/
+            top: 10px;
+        }
+        #water{
+            position: relative;
+            top: -75px;
+            z-index: 0;
+        }
+        .dummy{
+            background-color: lightsalmon;
+            height: 80px;
+            width: 100px;
         }
     </style>
 </head>
@@ -21,14 +49,49 @@
     </section>
     <section class="swim">
         <div>
-            <img src="./images/boy.svg" alt="position 1">
+            <img id="boy" src="./images/boy.svg" alt="position 1">
         </div>
-        <div>
+        <div id="ring" >
             <img src="./images/ring.svg" alt="">
         </div>
         <div>
-            <img src="./images/water.svg" alt="">
+            <img id="water" src="./images/water.svg" alt="">
         </div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+    <section>
+        <h1>Seperate</h1>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <ul>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+            <li><h4>gravity</h4></li>
+        </ul>
     </section>
 </body>
 </html>
