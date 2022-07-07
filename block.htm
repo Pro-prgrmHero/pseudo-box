@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoBoxBlock</title>
+    <style>
+        h1{
+            background-color: brown;
+            /* display: inline; */
+            border: 50px solid rgba(34, 178, 82, 0.932);
+        }
+        h2{
+            background-color: cyan;
+        }
+        p{
+            background-color: saddlebrown;
+        }
+        div{
+            /* This doesn't work--display: inline; */
+            background-color: violet;
+            height: 98px;
+            width: 250px;
+            margin-top: 20px;
+            padding: 50px;
+        }
+        span{
+            background-color: limegreen;
+            /* height: 200px;
+            width: 150px;
+            !^^ This doesn't work unless display: inline-block;
+            Todo: display: inline-block; */
+            /* display: inline-block; */
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; only Work left -right no Top-bottom */
+        }
+        a{
+            display: block;
+        }
+    </style>
+    <!-- Here are the block-level elements in HTML:
+    <address><article><aside><blockquote><canvas><dd>
+    <div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video> -->
+    <!-- Here are the inline elements in HTML:
+    <a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label>
+    <map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var> -->
+
+</head>
+<body>
+    <h1>Elder block</h1>
+    <h1>Elder block 2</h1>
+    <p>This a paragrph30 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ex libero quas voluptate non sunt voluptatum explicabo! Est tenetur accusantium maiores. Ea vel totam corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est amet molestias ad quaerat numquam, illo eius iste mollitia a excepturi?</p>
+    <span>little text</span>
+    <span>Another span</span>
+    <span>span next 3 no.</span>
+    <div>
+        <h2>Room-1</h2>
+        <p>crner-1</p>
+    </div>
+    <div>
+        <h2>Room-2</h2>
+        <p>crner-2</p>
+    </div>
+    <a href="http://">Go to google</a>
+    <a href="http://">Go to google</a>
+    <a href="http://">Go to google</a>
+    <div>
+        <h2>Room no-3</h2>
+        <p>One person staying</p>
+    </div>
+    <div>
+        <h2>Room no-3</h2>
+        <p>One person staying</p>
+    </div>
+    <div>
+        <h2>Room no-3</h2>
+        <p>One person staying</p>
+    </div>
+</body>
+</html>

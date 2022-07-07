@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1{
+            color: blueviolet;
+            width: 500px;
+            height: 100px;
+        }
+        h1:hover{
+            color: violet;
+            background-color: aqua;
+            margin: 50px;
+            padding: 50px;
+            font-size: 50px;
+            font-weight: 800;
+        }
+        .middle-input:focus {
+            color: green;
+        }
+        a:visited{
+            color: rgb(30, 90, 158);
+        }
+        li:first-child{
+            color: springgreen;
+        }
+        li:last-child{
+            color: rgba(238, 206, 22, 0.938);
+        }
+        li:nth-child(2n){
+            background-color: pink;
+        }
+        li:nth-child(2n+1){
+            color: crimson;
+        }
+        h3::before{
+            content:'this is'
+        }
+        h3::after{
+            content: ' after Psudo element';
+            background-color: blueviolet;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is pseudo Something</h1>
+    <input type="text">
+    <input class="middle-input" type="text">
+    <input type="text"><br>
+    <a href="https://brave.com">Brave</a>
+    <a href="https://github.io/arkenfox">firefox</a>
+    <a href="https://fonts.google.com/">google</a>
+    <br>
+    <h3>h3 header no1</h3>
+    <h3>h3 header no2</h3>
+    <h3>h3 header no3</h3>
+    <h3>h3 header no4</h3>
+    <h3>h3 header no5</h3>
+    <ul>
+        <li>name7</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>four</li>
+        <li>gibon</li>
+    </ul>
+</body>
+</html>
